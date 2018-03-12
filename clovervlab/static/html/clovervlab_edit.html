@@ -1,0 +1,364 @@
+<!--First interface loading-->
+<div class=" wrapper-comp-settings editor-with-buttons is-active" id="loading-tab">
+    <ul class="list-input settings-list" style='padding-left: 30px; padding-right: 30px;background-image: url("https://procan-group.com/imgXblock/please-wait.gif"); background-repeat: no-repeat;background-position: center; '>
+    </ul>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+            </li>
+            <li class="action-item">
+                <a href="#" class="button action-cancel">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--fin loading -->
+<!-- stetting-->
+<div class=" wrapper-comp-settings editor-with-buttons " id="settings-tab">
+    <input id="statusauth" type="hidden" value="{{ LoginClover }}">
+    <ul class="list-input settings-list">
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="vlab_edit_display_name">Display Name</label>
+                <input class="input setting-input" id="vlab_edit_display_name" value="{{ display_name }}" type="text" style=" background: #dddddd;" readonly>
+                <button data-tooltip="Edit" value="Clear" name="setting-clear" type="button" class="action setting-clear  setting-edit-DisplayName active">
+        <span aria-hidden="true" class="icon fa fa-pencil"></span><span class="sr">"Edit Value"</span>
+    </button>
+            </div>
+            <span class="tip setting-help">This name appears in the horizontal navigation at the top of the page.</span>
+        </li>
+        <!-- auth-->
+        <li class="field comp-setting-entry is-set logouthtml">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="vlab_edit_display_name"> Connection to CloVER</label>
+            </div>
+            <br><br>
+            <div class="wrapper-comp-setting">
+                <center>
+                    <div class="wrapper-videolist-settings" style="min-width: 100px;width:25%;">
+                        <div class="wrapper-videolist-urls" style=" background: #edf1f5 none repeat scroll 0 0; padding: 20px; box-sizing: border-box;border-radius: 5%; ">
+                            <a class="collapse-action collapse-setting" href="#">
+               The user {{ LoginClover }} is already connected
+               </a>
+                            <br>
+                            <div class="videolist-extra-videos is-visible">
+                                <img src="https://procan-group.com/imgXblock/Accept-Male-User-icon.png" width="90" style="padding-bottom: 15px; padding-top: 15px;">
+                                <br>
+                                <a href="#" class="link_button-Xblock logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </li>
+        <!--fin auth -->
+    </ul>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-primary" id="DisplayName">Ok</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button action-cancel">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end setting-->
+<!-- Xblock auth -->
+<div class=" wrapper-comp-settings editor-with-buttons " id="auth-tab">
+    <ul class="list-input settings-list">
+        <!-- auth-->
+        <li class="field comp-setting-entry is-set loginhtml">
+            <div class="wrapper-comp-setting">
+                <label class="label setting-label" for="vlab_edit_display_name">Hello {{username}}</label>
+            </div>
+            <span class="tip setting-help">Enter your Clover password and URL:</span>
+            <br><br>
+            <div class="wrapper-comp-setting">
+                <center>
+                    <div class="wrapper-videolist-settings" style="min-width: 100px;width: 70%;">
+                        <div class="wrapper-videolist-urls" style=" background: #edf1f5 none repeat scroll 0 0; padding: 20px; box-sizing: border-box;border-radius: 5%; ">
+                            <br>
+                            <div class="videolist-extra-videos is-visible">
+                                <TABLE>
+                                    <TR>
+                                        <TD><span class="" style="padding: 20px;">Password:</span></TD>
+                                        <TD><input type="hidden" id="LoginClover" value="{{username}}">
+                                            <input type="password" id="PwdClover" value="" class="input" placeholder="Password" style="width: 100%;margin-top: 10px; margin-bottom: 10px;"></TD>
+                                    </TR>
+                                    <TR>
+                                        <TD><span class="" style="padding: 20px;">Clover URL:</span></TD>
+                                        <TD>
+
+                                            <!-- <input type="text" id="URLClover" value="" class="input" placeholder="URL" style="width: 100%;margin-top: 10px; margin-bottom: 10px;"> -->
+                                            <div class="input-group input-group-lg" style="width: 100%;">
+                                                <span class="input-group-addon" id="sizing-addon1" style="background-color: #eee; border: 1px solid #ccc;  border-top-left-radius: 4px;border-bottom-left-radius: 4px;  color: #555;  font-size: 14px;  font-weight: 400;  line-height: 1;    text-align: center; width : 30%;padding-top:15px ;padding-bottom:14px; display: inline-block;">https://</span>
+                                                <input type="text" id="URLClover" value="" class="input" placeholder="URL" style="margin-top: 10px; border-top-left-radius: 0px;margin-bottom: 10px;border-bottom-left-radius: 0px;margin-left:-5px;width: 69%;">
+                                            </div>
+
+                                        </TD>
+
+
+                                    </TR>
+                                </TABLE>
+                                <span id="error_auth"></span>
+                                <br>
+                                <a href="#" class="link_button-Xblock login">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </li>
+        <!--fin auth -->
+    </ul>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-cancel">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- fin Xblock auth -->
+<!--scenario Vblab -->
+<div class=" wrapper-comp-settings editor-with-buttons " id="scenario-tab">
+    <ul class="list-input settings-list  ">
+        <div class="wrapper-license-options" style="margin-bottom: 10px;">
+            <h4 class="label setting-label" style="padding-top: 30px; padding-left: 30px;  display: inline-block;    left: 0;    margin-right: 10px;    min-width: 100px;    position: relative;    transition: color 0.25s ease-in-out 0s;    vertical-align:middle;    width: 25%;">VLAB scenarios </h4>
+            <p class="tip tip-inline" style="padding-left: 30px;"> Please select the appropriate VLAB scenario: </p>
+            <ul class="license-options" style="padding: 10px 50px 10px 120px;">
+                <li data-option="NC" class="action-item license-option is-clickable" style="border-bottom: 1px solid #e5e5e5;    line-height: 1.5;    padding: 10px 0 8px;">
+                    <input id="creative-commons-NC" name="creative-commons-NC" aria-describedby="NC-explanation" type="radio" value="1" style=" border: 0 none;    height: auto;    margin: 3px 15px 0;    min-width: auto;    vertical-align: top;    width: auto;">
+                    <label for="creative-commons-NC" class="label setting-label option-name" style="    cursor: pointer;    display: inline-block;    vertical-align: top;    width: 15%;">
+   Single VM
+   </label>
+                    <div id="NC-explanation" class="explanation" style="    color: #7f7f7f;    display: inline-block;    vertical-align: top;    width: 75%;">
+                        Instantiate a virtual environment with a single virtual machine
+                    </div>
+                </li>
+                <li data-option="NC" class="action-item license-option is-clickable" style="border-bottom: 1px solid #e5e5e5;    line-height: 1.5;    padding: 10px 0 8px; opacity: 0.5">
+                    <input id="creative-commons-NC" name="creative-commons-NC" aria-describedby="NC-explanation" type="radio" value="2" style=" border: 0 none;    height: auto;    margin: 3px 15px 0;    min-width: auto;    vertical-align: top;    width: auto;" disabled>
+                    <label for="creative-commons-NC" class="label setting-label option-name" style="    cursor: pointer;    display: inline-block;    vertical-align: top;    width: 15%;">
+   Single Container
+   </label>
+                    <div id="NC-explanation" class="explanation" style="    color: #7f7f7f;    display: inline-block;    vertical-align: top;    width: 75%;">
+                        Instantiate a virtual environment with a single container
+                    </div>
+                </li>
+                <li data-option="NC" class="action-item license-option is-clickable" style="border-bottom: 1px solid #e5e5e5;    line-height: 1.5;    padding: 10px 0 8px; opacity: 0.5">
+                    <input id="creative-commons-NC" name="creative-commons-NC" aria-describedby="NC-explanation" type="radio" value="3" style=" border: 0 none;    height: auto;    margin: 3px 15px 0;    min-width: auto;    vertical-align: top;    width: auto;" disabled>
+                    <label for="creative-commons-NC" class="label setting-label option-name" style="    cursor: pointer;    display: inline-block;    vertical-align: top;    width: 15%;">
+    Multiple VMs
+   </label>
+                    <div id="NC-explanation" class="explanation" style="    color: #7f7f7f;    display: inline-block;    vertical-align: top;    width: 75%;">
+                        Instantiate a virtual network environment with multiple virtual machines interconnected via VLAN
+                    </div>
+                </li>
+                <li data-option="NC" class="action-item license-option is-clickable" style="border-bottom: 1px solid #e5e5e5;    line-height: 1.5;    padding: 10px 0 8px; opacity: 0.5">
+                    <input id="creative-commons-NC" name="creative-commons-NC" aria-describedby="NC-explanation" type="radio" value="4" style=" border: 0 none;    height: auto;    margin: 3px 15px 0;    min-width: auto;    vertical-align: top;    width: auto;" disabled>
+                    <label for="creative-commons-NC" class="label setting-label option-name" style="    cursor: pointer;    display: inline-block;    vertical-align: top;    width: 15%;">
+   Multiple Containers 
+   </label>
+                    <div id="NC-explanation" class="explanation" style="    color: #7f7f7f;    display: inline-block;    vertical-align: top;    width: 75%;">
+                        Instantiate a virtual network environment with multiple containers interconnected via VLAN
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </ul>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-primary scenario_Vblab">Ok</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button action-cancel">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- scenario Vblab -->
+<!--  Single Container -->
+<div class=" wrapper-comp-settings editor-with-buttons " id="SingleContainer-tab">
+    <style type="text/css">
+        .inner-wrap {
+            background: none !important;
+        }
+
+        .comp-setting-entry {
+            background-color: transparent !important;
+        }
+    </style>
+    <ul class="list-input settings-list form-style-10" style="padding-left: 30px; padding-right: 30px; ">
+        <br/>
+        <!--class="createimage" -->
+        <div id="wizard">
+            <h2>First Step</h2>
+            <section class="createimage" style="opacity:0.5;pointer-events: none">
+                <li class="field comp-setting-entry is-set" style="z-index: -1;">
+                    <div class="section">&nbsp;&nbsp;<span>1</span>&nbsp;&nbsp;Create a New Image</div>
+                    <div class="inner-wrap">
+                        <label class="label setting-label" for="vlab_edit_display_name" style="color: #444">Image Name: </label> <input type="text" name="field1" id="image_name" class="input setting-input" style="width: 60%; display:inline" />
+                        <span class="tip setting-help required1" style="color:red">Image Name is required and  contain only letters, numbers and dashes. Please try again</span>
+                        <br/>
+                        <br/>
+                        <label class="label setting-label" for="vlab_edit_display_name" style="color: #444">Description:</label><textarea name="field2" id="Image_Description" class="input setting-input" style="width: 60%; display:inline"></textarea>
+                        <br/>
+                        <br/>
+                        <label class="label setting-label" for="vlab_edit_display_name" style="color: #444">Select type:</label>
+                        <input type="radio" name="type_create_image" value="newimage" style="height:15px; width: auto;  display: inline;" checked="checked" /> New image
+                        <input type="radio" name="type_create_image" value="existing" style="height:15px;width: auto; display: inline;" /> Existing image
+                        <br/><br/>
+                        <span id="new-image" style="display: block;">
+        <label class="label setting-label" for="vlab_edit_display_name" style="color: #444">Select image's os: </label>
+<span id="selectimage" > 
+<select id="List_Image" style="width: 60%;display:inline;"  >
+</select>
+	</span>
+                        <span class="tip setting-help required2" style="color:red">Please select image</span>
+                        <br/>
+                        <br/>
+                        <label class="label setting-label" for="vlab_edit_display_name" style="color: #444">Select flavor: </label>
+                        <span id="selectflavors">
+<select id="List_Flavors"  >
+</select>
+</span>
+                        <span class="tip setting-help required3" style="color:red">Please select flavor</span>
+                        <span class="tip setting-help disflavor"> 
+</span>
+                        </span>
+
+
+                        <span id="existingimage" style="display: none;">
+<label class="label setting-label" for="vlab_edit_display_name" style="color: #444;">Select existing image:  </label>
+<span id="ListNotBaseimage">
+<select id="List_ListNotBase"  >
+</select>
+</span>
+                        <span class="tip setting-help required4" style="color:red">Please select image</span>
+                        </span>
+                    </div>
+                </li>
+            </section>
+            <h2>Second Step</h2>
+            <section class="Confirmeimage" style="opacity:0.5;pointer-events: none">
+                <li class="field comp-setting-entry is-set">
+                    <div class="section">&nbsp;&nbsp;<span>2</span>&nbsp;&nbsp;Deploy your applications and tools</div>
+                    <div id="form">
+                    </div>
+                    <p style="padding-left:35px;" class="inner-wrap_confirme"><br/> A virtual machine is successfully created for you with the selected OS and flavor.
+                    </p>
+                    <center>
+                        <div class=" inner-wrap_confirme" style=" padding: 30px;background: #fff;border-radius: 6px;margin-bottom: 15px;  width: 40%; -webkit-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);-moz-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);">
+                            <fieldset>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span style="color: blue">Image name: </span> <span class="imagename"> {{ image_name }}</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: blue">OS name: </span> <span class="ImageOS"> {{ImageOS}}</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: blue">Flavor: </span> <span class="ImageFlavor"> {{ImageFlavor}} </span></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </div>
+                    </center>
+                    <p class="inner-wrap_confirme" style="padding-left:35px;">
+                        <br/> First, you need to access to your instance in order to install and configure your tools and software.
+                        <br/>If you choose to open the console in new tab, you need to allow pop-ups in your web browser.
+                    </p>
+                    <center>
+                        <div class="inner-wrap_confirme" style="width: 60%; padding: 30px;background: #fff;border-radius: 6px;margin-bottom: 15px; -webkit-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);-moz-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);">
+                            <fieldset>
+                                <table style="width: 80%;">
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2" colspan="2" align="center">
+                                                <a href="javascript:void(0)" id="ViewGuacamole">
+                        <img src="https://procan-group.com/imgXblock/display-icon.png" style="" width="60" />
+                        <center  style="margin-top: 10px;"> Open console in new tab </center>
+                    </a>
+                                            </td>
+                                            <td rowspan="40" colspan="40" style="margin-left: 20px; padding-left: 80px;" align="center">
+                                                <a href="javascript:void(0)" id="ViewFrameGuacamole" style="margin-left: 10px; " title="" class="action-primary action-create new-button action-create-library new-library-button">
+                        <img src="https://procan-group.com/imgXblock/window-icon.png" width="60" />
+                        <center style="padding-top: 10px;">Open console in this window </center>
+                    </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </fieldset>
+                        </div>
+                        <p class="inner-wrap_confirme" style="padding-left:35px;">
+                            <br/> Once finished, you can create a snapshot of the instance by clicking on the button below "Confirm image".
+                            <br/>Click on the "Cancel" button to abort the image creation process.
+                        </p>
+                        <!--console in iframe -->
+                        <div class="inner-wrap inner-wrap_iframe" style="display:none">
+                            <fieldset>
+                                <center style="margin-bottom: 10px; margin-top: 20px; opacity:0 " class="closeiframeGuacamole"><a href="javascript:void(0)" class="buttonCloseFrameGuacamole">
+<img src="https://procan-group.com/imgXblock/Close-Window-icon.png" style="width: 32px;"> </a>
+                                    <iframe class="iframeGuacamoleSnap" name="iframeGuacamoleSnap" src="about:blank" width="0" height="0" style="opacity:0;"></iframe>
+                            </fieldset>
+                        </div>
+                        </center>
+                        <!--fin console in iframe -->
+                </li>
+            </section>
+            <h2>Third Step</h2>
+            <section class="ImageActive" style="opacity:0.5;pointer-events: none">
+                <li class="field comp-setting-entry is-set">
+                    <div class="section">&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;Image ready</div>
+                    <div class="inner-wrap">
+                        <center>
+                            <span style="font-size: 18px;">
+  <img src="https://procan-group.com/imgXblock/ok_check_yes_tick_accept_success-512.png" width="22" />
+  &nbsp;
+ Your Virtual Lab is ready now. Please click on publish button to activate Your Xblock Lms
+</span>
+                            <br/><br/>
+                            <div class=" inner-wrap_confirme" style=" padding: 30px;background: #fff;border-radius: 6px;margin-bottom: 15px; 
+ width: 40%; -webkit-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);-moz-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);">
+                                <fieldset>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <span style="color: blue">Image name: </span> <span class="imagename">  {{ image_name }} </span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: blue">  OS name: </span><span class="ImageOS"> {{ImageOS}}</span> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: blue">Flavor: </span><span class="ImageFlavor"> {{ImageFlavor}} </span></td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </div>
+                        </center>
+                    </div>
+                </li>
+            </section>
+        </div>
+    </ul>
+    <div class="xblock-actions">
+        <ul>
+            <li class="action-item">
+                <a href="#" class="button action-primary createimage buttoncreateimage">Next</a>
+                <a href="#" class="button action-primary  Confirmeimage  buttonConfirmeimage ">Confirm image</a>
+                <a href="#" class="button action-primary  ImageActive  buttonDeleteimage ">Delete image</a>
+            </li>
+            <li class="action-item">
+                <a href="#" class="button action-cancel createimage">Cancel</a>
+                <a href="#" class="button Confirmeimage buttonDeleteimage">Cancel</a>
+                <a href="#" class="button action-cancel ImageActive">Exit</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- fin  Single Container -->

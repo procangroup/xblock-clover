@@ -1,0 +1,161 @@
+<div class="clovervlab_block">
+    {% if ho == 'student' %}
+    <center>
+        <h2>At the click of a edit button. you can create, confirm and delete image.</h2>
+    </center>
+    {% endif %} {% if ho != 'student' %}
+    <div class="form-style-10">
+        <h1 style="    background: #2A88AD;    padding: 15px 30px 10px 30px;   #margin: -30px -30px 30px -30px;    #margin: 15px -26px 30px;    border-radius: 10px 10px 0 0;    -webkit-border-radius: 10px 10px 0 0;    -moz-border-radius: 10px 10px 0 0;    color: #fff;    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);    font: normal 30px 'Bitter',serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);    border: 1px solid #257C9E; font-size: 24px">
+            {{display_name }}<span><font color='LightBlue'><b><span id="StatusMachine"></span></b>
+            </font>
+            </span>
+        </h1>
+        <input type="hidden" id="Name_VM" value="{{display_name }}">
+        <div id="form">
+        </div>
+        <input type="hidden" id="id_service" value="">
+        <a href="javascript:void(0)" class="refresh" style="float: right; margin-top: -20px; margin-right: 10px;"> <img src="https://procan-group.com/imgXblock/7TapRK7Bc.png"  width="80" > </a>
+        <span class="loading"><center><img src="https://procan-group.com/imgXblock/please-wait.gif" ></img></center></span>
+        <span class="VMcreated ">
+<li class="field comp-setting-entry is-set">
+      <div class="section" style="margin-left: 40px;"><span>1</span>&nbsp;View Desktop:</div>
+    </br>
+    <div class="inner-wrap blockViewVm">
+        <fieldset>
+            <center>
+                <div class=" inner-wrap_confirme" style=" padding: 15px;background: #fff;border-radius: 6px;margin-bottom: 40px;  width: 80%; -webkit-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);-moz-box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);box-shadow: 1px 2px 14px -5px rgba(0,0,0,0.75);">
+                    <fieldset>
+                        If you choose to open the console in new tab, you need to allow pop-ups in your web browser.
+                    </fieldset>
+                </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <center style="width: 150px;">
+                                    <a href="javascript:void(0)" id="ViewGuacamole" class="action-primary action-create new-button action-create-library new-library-button">
+                                 <img src="https://procan-group.com/imgXblock/display-icon.png" width="60" ></img>
+                                  <br/>Open console in new tab 
+                              </a>
+                                </center>
+                            </td>
+                            <td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                    <center style="width: 150px;">
+                                        <a href="javascript:void(0)" class="ViewDesktop">
+                                 <img src="https://procan-group.com/imgXblock/window-icon.png" width="60"  ></img>
+                                  <br/>Open console in this window  
+                              </a>
+                                    </center>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <center style="margin-bottom: 10px; margin-top: 20px; opacity:0 " class="closeiframeGuacamole"><a href="javascript:void(0)" class="buttonCloseFrameGuacamole"><img src="https://procan-group.com/imgXblock/Close-Window-icon.png" style="width: 32px;"> </a></center>
+            <iframe class="iframeGuacamole" name="iframeGuacamole" src="https://procan-group.com/imgXblock/please-wait.gif" width="0" height="0" style="opacity:0;" frameBorder="0"></iframe>
+            </span>
+        </fieldset>
+    </div>
+    </br>
+    <div class="section" style="margin-left: 40px;"><span>2</span>&nbsp; Other action:</div>
+    </br>
+    <div class="inner-wrap">
+        <fieldset>
+            <center>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="padding-left: 30px; padding-right: 30px;" class="buttondemarrerVM">
+                                <a href="javascript:void(0)">
+                                 <img src="https://procan-group.com/imgXblock/Start-icon.png" width="50" style="padding-left: 20px;"></img>
+                                 <center>  Start VM </center>
+                              </a>
+                            </td>
+                            <td style="padding-left: 30px; padding-right: 30px;" class="buttonRebootVM">
+                                <a href="javascript:void(0)">
+                                 <img src="https://procan-group.com/imgXblock/Power_-_Restart.png" width="50" style="padding-left: 20px;"></img>
+                                 <center> Reboot VM </center>
+                              </a>
+                            </td>
+                            <td style="padding-left: 30px; padding-right: 30px;" class="buttonStopVM">
+                                <a href="javascript:void(0)">
+                                 <img src="https://procan-group.com/imgXblock/green-stop-icon-32.png" width="50" style="padding-left: 20px;"></img>
+                                 <center> Stop VM </center>
+                              </a>
+                            </td>
+                            <td style="padding-left: 30px; padding-right: 30px;" class="buttonDeleteVM ">
+                                <a href="javascript:void(0)">
+                                 <img src="https://procan-group.com/imgXblock/Delete.png" width="60" style="padding-left: 20px;"></img>
+                                 <center>  Delete VM </center>
+                              </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+        </fieldset>
+    </div>
+    </li>
+    </span>
+    <span class="ImageNotcreated">
+      <div class="section" style="margin-left: 40px;"><span>1</span>&nbsp;Your vlab is not ready</div>
+</br>
+<div class="inner-wrap">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="#">
+           <img src="https://procan-group.com/imgXblock/do-not-disturb-rounded-sign-300x300.png" height="100" width="110" />
+                        </a>
+                </td>
+                <td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</span>
+<span class="form-style-10 VMnotcreated">
+      <div class="section" style="margin-left: 40px;"><span>1</span>&nbsp;Create VM</div>
+</br>
+<div class="inner-wrap">
+    <fieldset>
+        <center>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="createVM">
+                                 <img src="https://procan-group.com/imgXblock/start-button-png-image-100687.png" width="50" style="margin-left: 7px;" />
+                                 <center> Start VM </center>
+                              </a>
+                        </td>
+                        <td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </fieldset>
+</div>
+</div>
+</span>
+{% endif %}
+</div>

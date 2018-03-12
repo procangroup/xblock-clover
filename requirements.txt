@@ -1,0 +1,5 @@
+-e .
+-e git://github.com/procangroup/xblock-clover.git#egg=xblock-clover
+
+lxml
+lazy==1.2
