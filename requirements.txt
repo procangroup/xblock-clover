@@ -1,5 +1,5 @@
 -e .
--e git://github.com/procangroup/xblock-clover.git#egg=xblock-clover
+-e git://github.com/procangroup/xblock-clover.git@v1.0#egg=xblock-clover==1.0
 
 lxml
 lazy==1.2
