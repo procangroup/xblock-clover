@@ -24,12 +24,12 @@ setup(
     name='clovervlab-xblock',
     version='0.1',
     description='clovervlab XBlock',   # TODO: write a better description.
-    license='UNKNOWN',          # TODO: choose a license: 'AGPL v3' and 'Apache 2.0' are popular.
     packages=[
         'clovervlab',
     ],
     install_requires=[
         'XBlock',
+        'xblock-utils'
     ],
     entry_points={
         'xblock.v1': [
