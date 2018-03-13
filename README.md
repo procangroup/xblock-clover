@@ -9,7 +9,7 @@ The xBlock Integrates cloud based virtual lab environments with OpenEdx. The XBl
 
 The CloVER admin can be the same as the Edx admin or a third party like institution, enterprise or organisation.  The clover admin is responsible for configuring (using a very simple interface) the interaction between CloVER and Openstack. The OpenStack can be deployed for private clouds (in the case of SPOC for instance ) or offered as [public cloud services](https://www.openstack.org/marketplace/public-clouds/).
 
-The edx author (e.g. teacher) should contact the admin clover to obtain the CloVER URL and credentails. Once validated, the author can start use the Xblock to create virtual labs. The author can also access the CloVER interface to manage/access the desktops of users (learners).   
+The edx author (e.g. teacher) should contact the admin clover to obtain the CloVER URL and credentails. A registration interface can be used for this purpose. Once validated, the author can start use the Xblock to create virtual labs. The author can also access the CloVER interface to manage/access the virtual desktops of users (learners).   
 
  ![clover_architecture](https://github.com/procangroup/clover_images/blob/master/CloVER-EDXLab.png)
 
