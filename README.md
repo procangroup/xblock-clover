@@ -5,13 +5,14 @@ The CloVER XBlock integrates virtual lab environments into practical based edx c
 
 ## Installation
 
-Install the requirements into the python virtual environment of your
-`edx-platform` installation by running the following command from the
-root folder:
-
-```bash
-$ pip install -r requirements.txt
-```
+    # Move to the folder where you want to download the XBlock
+    cd /edx/app/edxapp
+    # Download the XBlock
+    sudo -u edxapp git clone https://github.com/procangroup/xblock-clover.git
+    # Install the XBlock
+    sudo -u edxapp /edx/bin/pip.edxapp install xblock-clover/
+    # restart edxapp:
+    sudo /edx/bin/supervisorctl restart edxapp:
 
 ## Enabling in studio
 
