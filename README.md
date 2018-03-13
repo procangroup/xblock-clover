@@ -3,6 +3,10 @@
 
 The CloVER XBlock integrates virtual lab environments into practical based edx courses. The XBlock allows students to conduct experiments using a virtual computers and desktops running on public or private Openstack Clouds. The XBlock interacts with the CloVER application, offered online as a cloud service for organisations and institutions. CloVER is a connection broker that instanciates on demand virtual desktops and servers in Openstack environments (owned and managed by the organisation or institution) and offers them to teachers and students in a scalable, reliable and secure manner. It has been developed by [ProCAN](http://www.procan-group.com)
 
+## Architecture
+
+ ![clover_architecture](https://github.com/procangroup/clover_images/blob/master/CloVER-EDXLab.png)
+
 ## Installation
 
     # Move to the folder where you want to download the XBlock
