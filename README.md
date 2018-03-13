@@ -30,8 +30,9 @@ You can enable the XBlock in studio through the advanced settings.
 To add the CloVER block to a unit, choose Clover VLAB from the Advanced Components list in the studio.
 When you add the CloVER component to a course in the studio, the block is field with default content, shown in the screenshot below.
 
-1. Enter your Clover credentials (Password) as well as the URL of your CloVER instance.  
-
+1. Enter your Clover credentials (Password) as well as the URL of your CloVER instance. If you don't have an access to a CloVER instance, you can use a demo account (Visit the Testing section for more details):  
+  - **Password**: passclover
+  - **CloVER URL**: democlover.daasbroker.com
     ![Authentication_to_clover](https://github.com/procangroup/clover_images/blob/master/authen.png)
     
     
