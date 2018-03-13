@@ -14,7 +14,9 @@ The edx author (e.g. teacher) should contact the admin clover to obtain the CloV
  ![clover_architecture](https://github.com/procangroup/clover_images/blob/master/CloVER-EDXLab.png)
 
 CloVER is today offered as a Service, hosted and managed by the [ProCAN](http://www.procan-group.com) company.
-To get a clover instance as service, please visit the site: https://procan-group.com/cloverEDX/.  You can try the CloVER product in the Cloud, free for 7 days (up to three desktops).
+You can try the CloVER product in the Cloud, free for 7 days (up to three desktops).
+
+To get a clover instance as service, please visit the site: https://procan-group.com/cloverEDX/.  
 
 
 ## XBlock Installation
@@ -107,6 +109,8 @@ Assuming `xblock-clover` is installed as above, you can test the Clover block to
   - **CloVER URL**: democlover.daasbroker.com
 
 Since the provided ClovER instance (democlover.daasbroker.com) is made for demo/test purpose, only three desktops are allowed to be created. If you need a dedicated ClovER instance for testing, please contact us: contact@procan-group.com 
+
+For production, to get a clover instance as service, please visit the site: https://procan-group.com/cloverEDX/.  
     
 ## License
 
