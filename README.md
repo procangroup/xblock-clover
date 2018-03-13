@@ -7,7 +7,7 @@ The CloVER XBlock integrates virtual lab environments into practical based edx c
 
 The xBlock Integrates cloud based virtual lab environments with OpenEdx. The XBlock interacts with the CloVER web application, offered online as a cloud service for organisations and institutions. CloVER, developed by [ProCAN](http://www.procan-group.com), acts as a VDI/DaaS broker between the xBlock and a private/public Openstack cloud environment. CloVER is a connection broker that instanciates on demand (Linux/Windows) virtual desktops and servers in Openstack clouds and offers them to teachers and students in a scalable, reliable and secure manner.
 
-The CloVER admin can be the same as the Edx admin or a third party like institution, enterprise or organisation.  The clover admin is responsible for configuring (using a very simple interface) the interaction between CloVER and Openstack. The OpenStack can be deployed for private clouds (in the case of SPOC for instance ) or offered as [public cloud services] (https://www.openstack.org/marketplace/public-clouds/).
+The CloVER admin can be the same as the Edx admin or a third party like institution, enterprise or organisation.  The clover admin is responsible for configuring (using a very simple interface) the interaction between CloVER and Openstack. The OpenStack can be deployed for private clouds (in the case of SPOC for instance ) or offered as [public cloud services](https://www.openstack.org/marketplace/public-clouds/).
 
 The edx author (e.g. teacher) should contact the admin clover to obtain the CloVER URL and credentails. Once validated, the author can start use the Xblock to create virtual labs. The author can also access the CloVER interface to manage/access the desktops of users (learners).   
 
