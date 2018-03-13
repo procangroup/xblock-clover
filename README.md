@@ -1,13 +1,23 @@
 # xblock-clover
 
 
-The CloVER XBlock integrates virtual lab environments into practical based edx courses. The XBlock allows students to conduct experiments using a virtual computers and desktops running on public or private Openstack Clouds. The XBlock interacts with the CloVER application, offered online as a cloud service for organisations and institutions. CloVER is a connection broker that instanciates on demand virtual desktops and servers in Openstack environments (owned and managed by the organisation or institution) and offers them to teachers and students in a scalable, reliable and secure manner. It has been developed by [ProCAN](http://www.procan-group.com)
+The CloVER XBlock integrates virtual lab environments into practical based edx courses. The XBlock allows students to conduct experiments using a virtual computers and desktops running on public or private Openstack Clouds. It has been developed by [ProCAN](http://www.procan-group.com)
 
 ## Architecture
 
+The xBlock Integrates cloud based virtual lab environments with OpenEdx. The XBlock interacts with the CloVER web application, offered online as a cloud service for organisations and institutions. CloVER, developed by [ProCAN](http://www.procan-group.com), acts as a VDI/DaaS broker between the xBlock and a private/public Openstack cloud environment. CloVER is a connection broker that instanciates on demand (Linux/Windows) virtual desktops and servers in Openstack clouds and offers them to teachers and students in a scalable, reliable and secure manner.
+
+The CloVER admin can be the same as the Edx admin or a third party like institution, enterprise or organisation.  The clover admin is responsible for configuring (using a very simple interface) the interaction between CloVER and Openstack. The OpenStack can be deployed for private clouds (in the case of SPOC for instance ) or offered as [public cloud services] (https://www.openstack.org/marketplace/public-clouds/).
+
+The edx author (e.g. teacher) should contact the admin clover to obtain the CloVER URL and credentails. Once validated, the author can start use the Xblock to create virtual labs. The author can also access the CloVER interface to manage/access the desktops of users (learners).   
+
  ![clover_architecture](https://github.com/procangroup/clover_images/blob/master/CloVER-EDXLab.png)
 
-## Installation
+CloVER is today offered as a Service, hosted and managed by the [ProCAN](http://www.procan-group.com) company.
+To get a clover instance as service, please visit the site: https://procan-group.com/cloverEDX/.  You can try the CloVER product in the Cloud, free for 7 days (up to three desktops).
+
+
+## XBlock Installation
 
     # Move to the folder where you want to download the XBlock
     cd /edx/app/edxapp
